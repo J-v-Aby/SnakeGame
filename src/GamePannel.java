@@ -2,30 +2,31 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
-import java.util.random.*;
+
 
 
 public class GamePannel extends JPanel implements ActionListener {
 
-    static final int SCREEN_WIDTH = 600;
-    static final int SCREEN_HEIGHT = 600;
-    static final int UNIT_SIZE = 25;
-    static final int GAME_UNITS = (SCREEN_HEIGHT * SCREEN_WIDTH) / UNIT_SIZE;
-    static final int DELAY = 75;
-    final int x[] = new int[GAME_UNITS];
-    final int y[] = new int[GAME_UNITS];
-    int bodyParts = 6;
-    int applesEaten;
-    int appleX;
-    int appleY;
-    char direction = 'R';
-    boolean running = false;
-    Timer timer;
-    Random random;
+
+
+  private final int SCREEN_WIDTH = 600;
+   private final int SCREEN_HEIGHT = 600;
+    private final int UNIT_SIZE = 25;
+    private final int GAME_UNITS = (SCREEN_HEIGHT * SCREEN_WIDTH) / UNIT_SIZE;
+    private final int  DELAY = 75;
+    private final int x[] = new int[GAME_UNITS];
+    private final int y[] = new int[GAME_UNITS];
+    private int bodyParts = 6;
+    private int applesEaten;
+    private int appleX;
+    private  int appleY;
+    private  int direction = 'R';
+    private  boolean running = false;
+    private  Timer timer;
+    private  Random random;
 
     public GamePannel() {
         random = new Random();
